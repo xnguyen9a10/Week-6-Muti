@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/MultiThreadingProgressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="295dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/progressbar"
+        android:clickable="false"
+        android:fadeScrollbars="false"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/progressbar"
+        app:layout_constrainedHeight="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/MultiThreadingTextView"
+        app:layout_constraintTop_toBottomOf="@+id/MultiThreadingEditText" />
+
+    <Button
+        android:id="@+id/MultiThreadingButton"
+        android:layout_width="182dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="52dp"
+        android:text="Do it again"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MultiThreadingTextView" />
+
+    <TextView
+        android:id="@+id/MultiThreadingTextView"
+        android:layout_width="67dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="44dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MultiThreadingEditText" />
+
+    <EditText
+        android:id="@+id/MultiThreadingEditText"
+        style="@android:style/Widget.Material.AutoCompleteTextView"
+        android:layout_width="239dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:autofillHints=""
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:hint="Number"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="lollipop" />
+</android.support.constraint.ConstraintLayout>
